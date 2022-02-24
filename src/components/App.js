@@ -11,10 +11,16 @@ TODO:
  */
 
 function App() {
+    const data = [
+        {company: 'Facebook', workers: 100, profit: 1500},
+        {company: 'Amazon', workers: 200, profit: 900},
+        {company: 'Google', workers: 400, profit: 3500},
+    ];
+
     return (
         <main>
             <h1>Graph builder</h1>
-            <Graph />
+            <Graph data={data}/>
         </main>
     );
 }
